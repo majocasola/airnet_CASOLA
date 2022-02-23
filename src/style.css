@@ -9,5 +9,8 @@ html, body, #root {
 }
 
 body{
-    background-color: rgb(160, 218, 233);
+    background-color: rgb(90, 98, 100);
+}
+h1{
+    text-align: center;
 }
