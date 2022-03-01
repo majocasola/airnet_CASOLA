@@ -1,11 +1,13 @@
 
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
+
 
 const App = () => {
   return (
     <>
        <NavBar/>
-       <h1>Bienvenidos a AirNet!</h1>
+       <ItemListContainer greeting="Bienvendidos a AirNet !"/>
      
      </>
   )
