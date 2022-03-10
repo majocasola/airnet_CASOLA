@@ -6,6 +6,7 @@ import ItemCount from "./components/ItemCount";
 
 
 const App = () => {
+
   return (
     <>
       <NavBar/>
