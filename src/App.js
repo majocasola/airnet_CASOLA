@@ -1,47 +1,17 @@
 
 import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
-import ItemCount from "./components/ItemCount";
-
-
+//import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 
 const App = () => {
 
   return (
-    <>
+        <div className="App">
+
       <NavBar/>
-      <ItemListContainer greeting="Bienvendidos a AirNet !"/>
-      <h4>Notebooks</h4>
+      <ItemDetailContainer id={9} greeting="Desafio Item Detail"/>
 
-      <ItemCount
-       stock={10}
-       initial={1}
-       /> 
-
-      <hr/>
-      <h4>Tablets</h4>
-
-      <ItemCount
-            stock={10}
-            initial={1}
-            />
-
-      <hr/>
-      <h4>Celulares</h4>
-
-      <ItemCount
-            stock={10}
-            initial={1}
-            />
-      <hr/>
-      <h4>Accesorios</h4>
-      <ItemCount
-            stock={10}
-            initial={1}
-            />
-       
-     
-     </>
+     </div>
   )
 }
 

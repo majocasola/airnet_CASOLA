@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import products from '../database/products'
+import products from '../../database/products'
 import ItemList from './ItemList';
 
 function getDatos () {
