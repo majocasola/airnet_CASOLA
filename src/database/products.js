@@ -44,7 +44,7 @@ const products = [{
     "description": "Reposition Esophageal Vein, Open Approach",
     "price": 273.6,
     "category": "Auto",
-    "imageUrl": "https://dummyimage.com/250x250.png/3f7d59",
+    "imageUrl": "https://auto.mercadolibre.com.ar/MLA-1128593016-ford-ranger-32l-4x4-xlt-at-carhaus-_JM#position=1&search_layout=grid&type=item&tracking_id=7ff3d1ee-a02a-4d74-9d77-2a26464bb060&gid=1&pid=1",
     "stock": 17
   }, {
     "id": 7,

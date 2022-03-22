@@ -11,8 +11,8 @@ export default function Item({item}) {
         <p>{item.description}</p>
         
     </div>
-    <ul class="list-group">
-      <li class="list-group-item">
+    <ul className="list-group">
+      <li className="list-group-item">
       <h3>
         $ {item.price}
       </h3>

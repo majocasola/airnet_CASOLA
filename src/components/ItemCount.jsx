@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function ItemCount({initial, stock}) {
+function ItemCount({stock, initial = 1, onAdd}) {
     const [count, setCount] = useState(initial);
 
     function sumar(){
@@ -14,13 +14,11 @@ function ItemCount({initial, stock}) {
     }
 
     function restar(){
-        if (count )
+        if (count > 0)
         setCount(count - 1);
     }
 
-    function onAdd(){
-        alert("En el carrito hay" + count + "productos");
-    }
+
 
 
   return (
@@ -35,7 +33,12 @@ function ItemCount({initial, stock}) {
             </div> 
             <div className="container">
                 <div className="text-center d-flex flex-column">
-                    <button disabled={ count <=0} onClick={onAdd} type='button' className="mt-3 btn btn-primary px-3">Agregar al carrito</button>
+                    <button disabled={ count <=0} 
+                    onClick={()=> onAdd(count)} 
+                    type='button' 
+                    className="mt-3 btn btn-primary cart-button px-3 mt-2">
+                        Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>

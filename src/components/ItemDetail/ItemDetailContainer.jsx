@@ -10,7 +10,7 @@ function getProducto (titleid) {
     setTimeout (function(){
       let title = products.find (item => item.id === Number(titleid));
       resolve(title)
-      }, 2000);
+      }, 500);
   });
 }
 
