@@ -13,7 +13,7 @@ export default function Item({item}) {
     </div>
     <ul className="list-group">
       <li className="list-group-item">
-      <h3>
+      <h3 className='fs-3 bg-danger text-wrap'>
         $ {item.price}
       </h3>
       </li>

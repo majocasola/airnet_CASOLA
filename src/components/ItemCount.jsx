@@ -18,9 +18,6 @@ function ItemCount({stock, initial = 1, onAdd}) {
         setCount(count - 1);
     }
 
-
-
-
   return (
     <div className = "container">
         <div style={{"maxWidth": "300px"}} className="container">
