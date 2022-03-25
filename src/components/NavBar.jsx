@@ -13,28 +13,31 @@ function NavBar() {
             <Link className="navbar-brand" to='/'>
                 <img height="34" src={logo} alt="Logo airnet"/>
             </Link>
+            <h1 className='AirNet'>AirNet</h1>
         </div>
-        <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-            <li className="nav-item">
+        <div className="collapse navbar-collapse p-2" id="navbarNav">
+        <ul className="navbar-nav" id="miNav">
+
+            <li className="nav-item-expand-lg ">
             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
             </li>
 
             <li className="nav-item">
-            <Link className='nav-link' to="/category/Auto">Auto</Link>
+            <Link className='nav-link' to="/category/Parlantes">Parlantes</Link>
             </li>
             <li className="nav-item">
-            <Link className='nav-link' to="/category/Medicina">Medicina</Link>
+            <Link className='nav-link' to="/category/Mouse">Mouse</Link>
             </li>
             <li className="nav-item">
-            <Link className='nav-link' to="/category/Clinica">Clinica</Link>
+            <Link className='nav-link' to="/category/Teclados">Teclados</Link>
             </li>
             <li className="nav-item">
-            <Link className='nav-link' to="/category/Cirugia">Cirugia</Link>
+            <Link className='nav-link' to="/category/Gamers">Gamers</Link>
             </li>
             <li className="nav-item">
                 <CartWidget/>
             </li>
+
         </ul>
     </div>
 

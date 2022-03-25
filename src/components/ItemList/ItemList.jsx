@@ -3,7 +3,7 @@ import Item from './Item.jsx'
 
 export default function ItemList({items}) {
   return (
-    <div className='container justify-content-between d-flex flex-row flex-warap'>
+    <div className='row g-3 text-center justify-content-center mb-3 pb-4'>
 
         { items.map(item => 
                     <Item

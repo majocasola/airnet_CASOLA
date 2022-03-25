@@ -7,13 +7,13 @@ export default function Item({item}) {
     <div className="col-md-4">
     <div>
         <h2>{item.title}</h2>
-        <img src={item.imageUrl} alt={item.title}/>
-        <p>{item.description}</p>
+        <img width="350" src={item.imageUrl} alt={item.title}/>
+        <p className='descripcion'>{item.description}</p>
         
     </div>
     <ul className="list-group">
       <li className="list-group-item">
-      <h3 className='fs-3 bg-danger text-wrap'>
+      <h3 className='bg-danger text-wrap mb-0'>
         $ {item.price}
       </h3>
       </li>

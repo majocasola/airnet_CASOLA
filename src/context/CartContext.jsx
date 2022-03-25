@@ -24,22 +24,22 @@ export function CartContextProvider({ children}) {
     }
 
     function isItemInCart(id) {
-        return itemsCart.some(item => item.item.id === id)
+        return itemsCart.some(item => item.id === id)
     }
 
     function getItemInCart(id) {
-        return itemsCart.find(item => item.item.id === id)
+        return itemsCart.find(item => item.id === id)
     }
 
     function removeItem(idDelete) {
-        setItemsCart(itemsCart.filter(item => item.item.id !== idDelete))
+        setItemsCart(itemsCart.filter(item => item.id !== idDelete))
     }
 
     function clearCart() {
         setItemsCart([])
     }
 
-    function countItemsinCart() {
+    function countItemsInCart() {
         let count = 0;
         itemsCart.forEach(item => count += item.quantity);
         return count;
@@ -48,12 +48,12 @@ export function CartContextProvider({ children}) {
 
     function getTotal() {
         let totalPrice = 0;
-        itemsCart.forEach(item => totalPrice += item.item.price * item.quantity);
+        itemsCart.forEach(item => totalPrice += item.price * item.quantity);
         return totalPrice;
     }
 
     return (
-        <Provider value={{ itemsCart, addItem, isItemInCart, getItemInCart, removeItem, clearCart, countItemsinCart, getTotal }}>
+        <Provider value={{ itemsCart, addItem, isItemInCart, getItemInCart, removeItem, clearCart, countItemsInCart, getTotal }}>
             {children}
         </Provider>
     )

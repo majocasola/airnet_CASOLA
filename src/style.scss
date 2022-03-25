@@ -29,6 +29,54 @@ h4{
 .btn{
     color: black;
     text-align: center;
+    padding: 1rem;
+    margin: 1rem;
 
 }
 
+#root{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        
+}
+.list-group-item{
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid rgb(83, 29, 29);
+}
+   
+#layaout-header{
+    text-align: center;
+    color: rgb(83, 29, 29);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+#miNav{
+    padding: 5px 100px 0px 50px;    
+
+}
+.AirNet{
+    text-align: left;
+    color: rgb(83, 29, 29);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding-right: 25rem;
+
+
+}
+.descripcion{
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
