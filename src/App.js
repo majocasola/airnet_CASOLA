@@ -13,6 +13,7 @@ import { CartContextProvider } from "./context/CartContext";
 const App = () => {
 
   return (
+    
     <CartContextProvider> 
         <BrowserRouter className="App">
             <NavBar/>

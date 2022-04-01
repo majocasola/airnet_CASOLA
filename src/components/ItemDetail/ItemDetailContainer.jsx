@@ -1,26 +1,16 @@
 import React, {useEffect, useState} from 'react'
-import products from '../../database/products.js'
 import ItemDetail from './ItemDetail.jsx';
 import {useParams} from "react-router-dom"
+import { getProducts} from '../../firebase/index';
 
 
-function getProducto (titleid) {
 
-  return new Promise((resolve, reject) =>{
-    setTimeout (function(){
-      let title = products.find (item => item.id === Number(titleid));
-      resolve(title)
-      }, 500);
-  });
-}
-
-
-function ItemDetailContainer({greeting, id}) {
+function ItemDetailContainer({greeting}) {
   const [item, setItem] = useState([]);
   const {titleid} = useParams();
 
   useEffect (() => {
-    getProducto (titleid)
+    getProducts (titleid)
     .then( respuestaPromise => setItem(respuestaPromise))
   }, [titleid]);
  
