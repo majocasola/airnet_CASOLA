@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, doc, getDoc, query, collection, getDocs, where } from "firebase/firestore/lite";
+import { getFirestore, doc, getDoc, addDoc, query, Timestamp, collection, getDocs, where } from "firebase/firestore/lite";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDMJSN0LRjkodusOu0UlsBnIU1JwQBoU-M",
@@ -39,4 +39,17 @@ export async function getProducts(id) {
     const resultadoDoc = await getDocs(myquery);
 
     return resultadoDoc.docs[0].data();
+}
+
+export async function sendBuyOrder(order) {
+    const fecha = Timestamp.now();
+    const orderWithDate = {...order, timestamp: fecha};
+    
+
+    const miColecc = collection (firestoreDB, 'orders');
+    const orderDoc = await addDoc(miColecc, orderWithDate);
+    return orderDoc.id;
+    
+    
+    
 }

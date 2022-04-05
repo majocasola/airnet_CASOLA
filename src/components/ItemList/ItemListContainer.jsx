@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
-import { getAllProducts, getAllProductsFromCat } from '../../firebase/index';
+import { getAllProducts, getAllProductsFromCat } from '../firebase/index';
 
 
 
