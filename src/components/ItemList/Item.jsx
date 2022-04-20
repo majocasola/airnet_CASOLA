@@ -13,13 +13,13 @@ export default function Item({item}) {
     </div>
     <ul className="list-group">
       <li className="list-group-item">
-      <h3 className='bg-danger text-wrap mb-0'>
+      <h3 className="precio">
         $ {item.price}
       </h3>
       </li>
     </ul>
 
-      <Link className="btn btn-primary" to={urlpath}>Ver detalle del producto</Link>
+      <Link className="btn btn-primary" to={urlpath} id="botonDetalle" >Ver detalle del producto</Link>
 
     </div>
   )

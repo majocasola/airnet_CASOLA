@@ -83,3 +83,53 @@ h3{
     font-weight: bold;
     padding-left: 1.5rem;
 }
+
+img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    
+}
+
+#botonDetalle{
+    padding: 0px;
+}
+
+.precio{
+    color: rgb(12, 14, 14);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgb(115, 200, 232);
+    padding: 5px;
+    margin: 0px;
+    
+}
+
+#imagenDetalle{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.itemDetail{
+    padding-left: 1.5rem;
+}
+
+.descriptionDetail{
+    color: black;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.precioDetail{
+    color: rgb(23, 77, 241);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+ 
+
+
+}

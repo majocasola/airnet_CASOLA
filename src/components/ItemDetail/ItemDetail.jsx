@@ -17,11 +17,11 @@ function ItemDetail({item}) {
 }
 
   return (
-    <div>
+    <div className='itemDetail'>
     <h2>{item.title}</h2>
-    <img src={item.imageUrl} alt={item.title}/>
-    <p>{item.description}</p>
-    <h3>{item.price}</h3>
+    <img id="imagenDetalle" src={item.imageUrl} alt={item.title}/>
+    <p className='descriptionDetail'>{item.description}</p>
+    <h3 className='precioDetail'>${item.price}</h3>
     
     <hr/>
     { countInCart === 0 ?

@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7d334c03-ca2a-4a3e-91d2-a1a8328b8be5/deploy-status)](https://app.netlify.com/sites/airnet/deploys)
+# AirNet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción:
+AirNet es el nombre de la entrega del proyecto final del curso de React JS. Es un e-commerce de productos tecnológicos. Fue a pedido de una persona que necesita tener una página de su comercio, por ende decidí emprender este desafío. Se utilizó Firebase como backend, para poder saber el codigo del pedido y los productos seleccionados por la persona que hace la compra.
 
-## Available Scripts
+## Tecnologías:
 
-In the project directory, you can run:
+- Interfaz realizada con React 17.0.2
+- Routin realizado con React-Router-DOM 6.2.2
+- Estilos hechos con Bootstrap 5.1.3 para que la aplicacion sea Responsive en cualquier dispositivo
+- Firebase para el backend
+- Netlify para servicio de alojamiento del proyecto
 
-### `npm start`
+### Uso e instalacion:
+```
+Para clonar mi proyecto se debe usar el siguiente comando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    git clone https://github.com/majocasola/airnet_casola.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Luego por consola dirigirse a la carpeta descargada:
 
-### `npm test`
+    cd airnet_casola
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Despues instalar npm con el comando:
 
-### `npm run build`
+    npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Finalmente para ver el proyecto se debe iniciar nmp con el comando:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#####El siguiente link redirige al proyecto alojado en Netlify:
+ https://airnet.netlify.app/
